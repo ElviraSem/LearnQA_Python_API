@@ -31,7 +31,6 @@ def check_task_attrs(task_executing_response, timeout):
             print("Task status is correct. It is the following: " + task_processing_status)
     else:
         print("Task status was incorrectly measured.")
-        return
 
     if 'result' in check_task_values.json():
         task_result = check_task_values.json()["result"]
@@ -40,7 +39,6 @@ def check_task_attrs(task_executing_response, timeout):
         print("'result' is absent because the task is not ready")
     else:
         print("Take attention: Task was not executed")
-        return
 
 
 """
