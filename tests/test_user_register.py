@@ -117,32 +117,3 @@ class TestUserRegister(BaseCase):
         Assertions.assert_code_status(response, 200)
         Assertions.assert_json_has_key(response, "id")
 
-        # Assertions.assert_code_status(response, 400)
-        # assert response.content.decode("UTF-8") == f"The value of '{current_name}' field is too short", \
-        #     f"Unexpected response content {response.content}"
-
-    # @pytest.mark.parametrize('username, firstname, lastname', user_names)
-    # def test_create_user_with_long_name(self, username, firstname, lastname):
-    # def test_create_user_with_long_name(self):
-    #     name = BaseCase.generate_name(10)
-    #     data = {
-    #
-    #         'username': name,
-    #         'firstName': 'firstname',
-    #         'lastName': 'lastname',
-    #         'password': '123',
-    #         'email': 'mytestuser@learnqa.ru'
-    #     }
-        current_name = ""
-        # for name in {username, firstname, lastname}:
-        #     if len(name) == 250:
-        #         current_name = name
-
-        # response = MyRequests.post("/user/", data=data)
-        # print("response.status_code: ", response.status_code)
-        # print("response.content: ", response.content)
-
-        # Assertions.assert_code_status(response, 400)
-        # assert response.content.decode("UTF-8") == f"The value of '{current_name}' field is too short", \
-        #     f"Unexpected response content {response.content}"
-

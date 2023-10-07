@@ -51,3 +51,4 @@ class MyRequests():
         Logger.add_response(response)
 
         return response
+

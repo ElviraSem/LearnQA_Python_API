@@ -39,7 +39,7 @@ class BaseCase:
         }
 
     @staticmethod
-    def generate_name(length:int):
+    def generate_name(length: int):
         letters = string.ascii_letters
         digits = string.digits
         synbols = string.ascii_letters + string.digits
@@ -61,7 +61,6 @@ class BaseCase:
             ('newuser', 'userFirstName', BaseCase.generate_name(length), '123', BaseCase.prepare_email("learnqa2"))
         ]
         return data
-
 
 
 
